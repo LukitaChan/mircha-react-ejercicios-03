@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import ConceptosBasicos from './components/ConceptosBasicos';
+import MenuConceptos from './pagesLuka/MenuConceptos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+		<div className='grid-1-1'>
+      <h1>Ejercicios React</h1>
+			<h2>React Router</h2>
+			<a href='https://reactrouter.com/docs/en/v6/getting-started/tutorial' target='_blank' rel='noreferrer'>
+        <button className='boton'>
+          Documentacion
+        </button>
+			</a>
+      <MenuConceptos />
+      <ConceptosBasicos />
+		</div>
+	);
 }
 
 export default App;
